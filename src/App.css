@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 * {
-    z-index: 1;
     margin: 0;
     padding: 0;
     outline: 0;
@@ -15,7 +14,6 @@ body {
     background-color: #121215;
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Roboto', sans-serif;
-    display: flex;
 }
 
 .page {
