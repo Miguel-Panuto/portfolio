@@ -1,0 +1,12 @@
+.skills-container {
+    width: 100%;
+}
+
+.skills-container ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container ul li {
+    margin-top: 10px;
+}

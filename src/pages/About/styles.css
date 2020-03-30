@@ -1,0 +1,9 @@
+.image-container {
+    width: 40vh;
+    margin: 10vh auto;
+}
+
+.image-container img {
+    width: 100%;
+}
+
