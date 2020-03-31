@@ -29,3 +29,13 @@
     color: #dfdfea;
     cursor: pointer;
 }
+
+@media(max-width: 500px) {
+    .social-container .social-item span, input {
+        font-size: 1rem;
+    }
+    .social-container .social-item {
+        width: 40vh;
+        margin-top: 50px;
+    }
+}
