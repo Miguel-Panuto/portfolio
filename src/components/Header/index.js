@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import { Link, animateScroll } from 'react-scroll';
 
-import logo from '../../assets/Logo.svg';
 
 import './styles.css';
 
@@ -10,7 +9,6 @@ import './styles.css';
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(document.body.clientWidth <= 500);
-  const [iconSize, setIconSize] = useState(document.body.clientWidth <= 500 ? 50:100);
   const defaultButtons = () => {
     const previousSelected = document.getElementsByClassName('element selected')[0];
     if (previousSelected)
@@ -41,9 +39,9 @@ export default function Header() {
     if (!isMobile) {
       return (
         <>
-          <ListItem route="about" name="Sobre" />
-          <ListItem route="skills" name="Habilidades" />
-          <ListItem route="contact" name="Contato" />
+          <ListItem route="about" name="About" />
+          <ListItem route="skills" name="Skills" />
+          <ListItem route="contact" name="Contact" />
         </>
       )
     }
@@ -51,13 +49,11 @@ export default function Header() {
   }
 
   window.onresize = () => {
-    if (document.body.clientWidth <= 500) {
+    if (document.body.clientWidth <= 500)
       setIsMobile(true);
-      setIconSize(50);
-    } else {
+    else
       setIsMobile(false);
-      setIconSize(100);
-    }
+
   }
   const ListItem = props => {
     const className = "element";
@@ -77,9 +73,6 @@ export default function Header() {
 
   return (
     <header>
-      <div className="logo" onClick={() => { animateScroll.scrollToTop(); defaultButtons(); }}>
-        <img src={logo} alt="Logo" width={iconSize} />
-      </div>
       <nav>
         <ul>
           <RenderHeader />

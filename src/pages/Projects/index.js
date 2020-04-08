@@ -7,7 +7,7 @@ export default function Projects() {
     <div id="projects" className="page">
       <div className="projects-container">
         <div className="title">
-          <h2>Projetos</h2>
+          <h2>Projects</h2>
         </div>
         
       </div>

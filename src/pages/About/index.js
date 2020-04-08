@@ -11,24 +11,25 @@ export default function About() {
     <div id="about" className="page">
       <div className="about-container">
         <div className="title">
-          <h2>Sobre</h2>
+          <h2>About</h2>
         </div>
         <p>
-          Sou Miguel Coutinho Panuto, sou um desenvolvedor full stack.
+          My name is Miguel Panuto, I'm a Web Developer.
         </p>
         <p>
-          Minha carreira como programador começou a {toDay.getFullYear() - start.getFullYear()} anos,
-          começando com a linguagem C, dois anos depois aprendi HTML e CSS, logo após Java, C#, JavaScript, etc.
+          I have more than {toDay.getFullYear() - start.getFullYear()} years in the programming world. 
+          I started with C language, learning the basics concepts, with my evolution I started to 
+          specialize, it was then that I decided to go with web development.
         </p>
         <p>
-          Banco de dados tenho experiência com MySQL e MongoDB.
+        My knowledge with JavaScript evolved, with him I learned Node.js, React.js and React Native. 
+        But, that isn’t my limit, also I know database, my main is MySQL.
         </p>
         <p>
-          Atualmente minha linguagem favorita é o JavaScript. Trabalho com o Node.js no back end e React.js no front end,
-          tenho certa experiência com desenvolvimento mobile também, com o React Native.
+          I currently work with react.js and node.js
         </p>
         <div className="image-container" id="logos">
-          <img src={logos} alt="React e node simbolos" />
+          <img src={logos} alt="React and node symbols" />
         </div>
       </div>
     </div>

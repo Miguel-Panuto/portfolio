@@ -7,7 +7,7 @@ export default function Skills() {
     <div id="skills" className="page">
       <div className="skills-container">
         <div className="title">
-          <h2>Habilidades</h2>
+          <h2>Skills</h2>
         </div>
         <ul>
           <li>JavaScript</li>

@@ -7,8 +7,8 @@ export default function Apresentation() {
         <div id="apr">
             <div className="container">
                 <h1>
-                    Olá,<br />
-                    Sou Miguel
+                    Hello,<br />
+                    I am Miguel
                 </h1>
                 <div id="profile" />
             </div>

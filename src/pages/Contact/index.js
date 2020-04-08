@@ -11,7 +11,7 @@ export default function Contact() {
     <div id="contact" className="page">
       <div className="contact-container">
         <div className="title">
-          <h2>Contato</h2>
+          <h2>Contact</h2>
         </div>
         <div className="social-container">
           <a href="https://www.linkedin.com/in/miguel-panuto-b7108b182/">
