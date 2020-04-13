@@ -14,7 +14,11 @@ export default function Projects() {
         <ProjectsContainer>
           <ProjectContainer>
             <span>Landing Page</span>
-            <a href="https://miguel-panuto.github.io/landing-page/" >
+            <a 
+              href="https://miguel-panuto.github.io/landing-page/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <ImageContainer src={LandPage}/>
             </a>
           </ProjectContainer>
