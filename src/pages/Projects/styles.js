@@ -28,7 +28,8 @@ export const ProjectContainer = styled.div`
 export const ImageContainer = styled.div`
     background-image: url(${props => props.src});
     height: 200px;
-    width: 300px;
+    max-width: 300px;
+    width: 75vw;
     border-radius: 5px;
     background-size: cover;
 `;
