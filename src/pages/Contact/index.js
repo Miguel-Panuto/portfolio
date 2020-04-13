@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi'
-import './styles.css';
+import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
+import { Page, Container, Title } from '../../global-styles';
+import { ContainerContact, SocialItem } from './styles';
 
 export default function Contact() {
   const [iconSize, setIconSize] = useState(document.body.clientWidth <= 500 ? 30:50);
@@ -8,30 +9,30 @@ export default function Contact() {
       setIconSize(document.body.clientWidth <= 500 ? 30:50);
   }
   return (
-    <div id="contact" className="page">
-      <div className="contact-container">
-        <div className="title">
+    <Page id="contact">
+      <Container>
+        <Title>
           <h2>Contact</h2>
-        </div>
-        <div className="social-container">
+        </Title>
+        <ContainerContact>
           <a href="https://www.linkedin.com/in/miguel-panuto-b7108b182/">
-            <div className="social-item">
+            <SocialItem>
               <FiLinkedin size={iconSize} />
               <span>Miguel Panuto</span>
-            </div>
+            </SocialItem>
           </a>
           <a href="https://github.com/Miguel-Panuto">
-            <div className="social-item">
+            <SocialItem>
               <FiGithub size={iconSize} />
               <span>Miguel-Panuto</span>
-            </div>
+            </SocialItem>
           </a>
-          <div className="social-item">
+          <SocialItem>
             <FiMail size={iconSize} />
             <input type="email" id="email" value="miguel.panuto@gmail.com" disabled/>
-          </div>
-        </div>
-      </div>
-    </div>
+          </SocialItem>
+        </ContainerContact>
+      </Container>
+    </Page>
   );
 }

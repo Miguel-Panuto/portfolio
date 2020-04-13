@@ -1,17 +1,17 @@
 import React from 'react';
 
-import './styles.css';
+import { Container, ProfileContainer } from './styles';
 
 export default function Apresentation() {
     return (
-        <div id="apr">
+        <Container>
             <div className="container">
                 <h1>
                     Hello,<br />
                     I am Miguel
                 </h1>
-                <div id="profile" />
+                <ProfileContainer />
             </div>
-        </div>
+        </Container>
     );
 }

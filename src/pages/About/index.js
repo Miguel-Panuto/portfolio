@@ -1,18 +1,19 @@
 import React from 'react';
 
+import { Page, Container, Title } from '../../global-styles';
+import { ImageContainer } from './styles';
 import logos from '../../assets/images/logos.png';
 
-import './styles.css';
 
 export default function About() {
   const start = new Date('2017');
   const toDay = new Date();
   return (
-    <div id="about" className="page">
-      <div className="about-container">
-        <div className="title">
+    <Page id="about">
+      <Container className="about-container">
+        <Title>
           <h2>About</h2>
-        </div>
+        </Title>
         <p>
           My name is Miguel Panuto, I'm a Web Developer.
         </p>
@@ -28,10 +29,10 @@ export default function About() {
         <p>
           I currently work with react.js and node.js
         </p>
-        <div className="image-container" id="logos">
+        <ImageContainer id="logos">
           <img src={logos} alt="React and node symbols" />
-        </div>
-      </div>
-    </div>
+        </ImageContainer>
+      </Container>
+    </Page>
   );
 }

@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 
-import { Link, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
-
-import './styles.css';
-
-
+import { Container } from './styles';
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(document.body.clientWidth <= 500);
@@ -28,9 +25,11 @@ export default function Header() {
       borderBottomHandler('about');
     } else if (screenPos >= 35 && screenPos < 55) {
       borderBottomHandler('skills');
-    } else if (screenPos >= 55) {
-      borderBottomHandler('contact');
-    } else {
+    } else if (screenPos >= 55 && screenPos < 75) {
+      borderBottomHandler('projects');
+    } else if(screenPos >= 75) {
+      borderBottomHandler('contact')
+    }else {
       defaultButtons();
     }
   }
@@ -41,6 +40,7 @@ export default function Header() {
         <>
           <ListItem route="about" name="About" />
           <ListItem route="skills" name="Skills" />
+          <ListItem route="projects" name="Projects" />
           <ListItem route="contact" name="Contact" />
         </>
       )
@@ -72,12 +72,12 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <Container>
       <nav>
         <ul>
           <RenderHeader />
         </ul>
       </nav>
-    </header>
+    </Container>
   );
 }

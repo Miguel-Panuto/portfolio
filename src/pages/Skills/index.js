@@ -1,15 +1,16 @@
 import React from 'react';
 
-import './styles.css';
+import { Page, Container, Title } from '../../global-styles';
+import { Ul } from './styles';
 
 export default function Skills() {
   return (
-    <div id="skills" className="page">
-      <div className="skills-container">
-        <div className="title">
+    <Page id="skills">
+      <Container>
+        <Title className="title">
           <h2>Skills</h2>
-        </div>
-        <ul>
+        </Title>
+        <Ul>
           <li>JavaScript</li>
           <li>React.js</li>
           <li>HTML</li>
@@ -21,8 +22,8 @@ export default function Skills() {
           <li>C#</li>
           <li>Java</li>
           <li>C</li>
-        </ul>
-      </div>
-    </div>
+        </Ul>
+      </Container>
+    </Page>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+import GlobalStyle from './global-styles';
 
 import Header from './components/Header';
 
@@ -12,12 +12,14 @@ import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
       <Header/>
       <Apresentation/>
       <About/>
       <Skills/>
+      <Projects/>
       <Contact/>
-    </div>
+    </>
   );
 }
