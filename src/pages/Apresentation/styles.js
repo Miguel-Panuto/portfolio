@@ -41,6 +41,10 @@ export const Container = styled.div`
         h1 {
             font-size: 2rem;
         }
+        .container {
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
 `;
 
