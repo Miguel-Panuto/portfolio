@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { Page, Container, Title } from '../../global-styles';
-import { ProjectsContainer, ProjectContainer, ImageContainer } from './styles';
-import LandPage from '../../assets/images/LandingPage.png'
+import { Page, Container, Title } from "../../global-styles";
+import { ProjectsContainer } from "./styles";
+import ProjectContainer from "./components/ProjectContainer";
+import LandPage from "../../assets/images/LandingPage.png";
 
 export default function Projects() {
   return (
@@ -12,16 +13,11 @@ export default function Projects() {
           <h2>Projects</h2>
         </Title>
         <ProjectsContainer>
-          <ProjectContainer>
-            <span>Landing Page</span>
-            <a 
-              href="https://miguel-panuto.github.io/landing-page/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <ImageContainer src={LandPage}/>
-            </a>
-          </ProjectContainer>
+          <ProjectContainer
+            title="Landing Page #1"
+            image={LandPage}
+            link="https://miguel-panuto.github.io/landing-page/"
+          />
         </ProjectsContainer>
       </Container>
     </Page>
