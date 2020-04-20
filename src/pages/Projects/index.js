@@ -26,7 +26,7 @@ export default function Projects() {
             link="https://miguel-panuto.github.io/landing-page-example-2/"
           />
           <ProjectContainer
-            title="Game Page #2"
+            title="Game Page"
             image={GameLandingPage}
             link="https://miguel-panuto.github.io/game-landing-page-example/"
           />
