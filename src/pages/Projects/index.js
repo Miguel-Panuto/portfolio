@@ -5,6 +5,7 @@ import { ProjectsContainer } from "./styles";
 import ProjectContainer from "./components/ProjectContainer";
 import LandPage from "../../assets/images/LandingPage.png";
 import LandPage2 from "../../assets/images/LandingPage2.png";
+import GameLandingPage from "../../assets/images/GameLandingPage.png";
 
 export default function Projects() {
   return (
@@ -23,6 +24,11 @@ export default function Projects() {
             title="Landing Page #2"
             image={LandPage2}
             link="https://miguel-panuto.github.io/landing-page-example-2/"
+          />
+          <ProjectContainer
+            title="Game Page #2"
+            image={GameLandingPage}
+            link="https://miguel-panuto.github.io/game-landing-page-example/"
           />
         </ProjectsContainer>
       </Container>
